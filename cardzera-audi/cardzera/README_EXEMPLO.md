@@ -1,10 +1,10 @@
 # Exemplo de Cardzera para o Servidor Genshin Impact Brasil
 
-Este é um exemplo de como exibir o card do servidor [Genshin Impact Brasil](https://discord.gg/gibrasil) utilizando o Cardzera.
+Este é um exemplo de como exibir o card do servidor [Genshin Impact Brasil](https://discord.gg/r6R4NdaA) utilizando o Cardzera.
 
 ## Card do Servidor
 
-[![Discord Server Card](https://cardzera.audibert.dev/api/748720691645251716?t={timestamp})](https://discord.gg/gibrasil)
+[![Discord Server Card](https://cardzera.audibert.dev/api/748720691645251716?t={timestamp})](https://discord.gg/r6R4NdaA)
 
 > **Dica:**
 > Substitua `{timestamp}` por `Date.now()` ou um valor dinâmico para forçar a atualização em tempo real e evitar cache.
