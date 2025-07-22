@@ -18,11 +18,6 @@ Exemplo de uso no README:
 ### Opera Epiclese
 [![Card do Discord](https://cardzera.audibert.dev/api/996403908530405406?t={timestamp})](https://discord.gg/operaepiclese)
 
-### Servidor dos Programadores
-[![Card do Discord](https://cardzera.audibert.dev/api/1112920281367973900?t={timestamp})](https://discord.gg/servidordosprogramadores)
-
-### Exemplo genérico
-[![Card do Discord](https://cardzera.audibert.dev/api/1383718526694461532?t={timestamp})](https://discord.gg/XuhsaMEqzf)
 
 > **IMPORTANTE:**  
 > Adicionar `?t={timestamp}` na URL é essencial para forçar a atualização do card em tempo real.
