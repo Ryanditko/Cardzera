@@ -1,98 +1,73 @@
-<p align="left">
-  <img src="src/public/logo.png" alt="CardzeraLogo" width="400">
-</p>
 
-# Cardzera
+Substitua `:serverId` pelo ID do seu servidor do Discord.
 
-Generates a custom card for your Discord server, designed to be embedded in your GitHub README or any other platform. It visually displays your server info, making it easy to share and invite others.
+> **Dica:**  
+> Para obter o ID do seu servidor: Ative o Modo Desenvolvedor > Clique com o direito no servidor > Copiar ID
 
-_This project is inspired in [lanyard-profile-readme](https://github.com/cnrad/lanyard-profile-readme) by [@cnrad](https://github.com/cnrad), that generates a discord user card. Thx!_
-
-## How it works
-
-The service uses [Cardzera#8965](https://discord.com/users/1368283106276147200) (a discord bot) to fetch server information through Discord's API. When you provide a server ID, the bot (which needs to be in your server) retrieves details like:
-
-- Server name
-- Server icon
-- Member count
-- Online members count
-
-Then, it generates a beautifully styled card showing this information that you can embed anywhere. The generated card is an SVG image optimized for fast loading and can be fully customized with your preferred colors and style.
-
-### Prerequisites
-
-1. First, [invite Cardzera Bot to your server](https://discord.com/oauth2/authorize?client_id=1368283106276147200&permissions=525312&integration_type=0&scope=bot).
-2. The bot needs to be in your server to access its information. Required permissions:
-
-   | Permission             | Description                                |
-   | ---------------------- | ------------------------------------------ |
-   | `View Channels`        | `To access server information`             |
-   | `View Server Insights` | `To acesses server features (coming soon)` |
-   | `Members Intent`       | `To count online members`                  |
-
-## Usage
-
-### Basic endpoint
-
-```
-https://cardzera.audibert.dev/api/:serverId?t={timestamp}
-```
-
-Replace `:serverId` with your Discord server ID.
-
-> [!TIP]
-> Get your server ID (Enable Developer Mode > Right click server > Copy ID)
-
-Example:
+Exemplo de uso no README:
 
 ```markdown
-[![Discord Server Card](https://cardzera.audibert.dev/api/:serverId?t={timestamp})](https://discord.gg/serverInviteCode)
+[![Card do Discord](https://cardzera.audibert.dev/api/:serverId?t={timestamp})](https://discord.gg/serverInviteCode)
 ```
 
-## Live Examples
+## Exemplos ao vivo
 
-[![Discord Server Card](https://cardzera.audibert.dev/api/1383718526694461532?t={timestamp})](https://discord.gg/XuhsaMEqzf)
+### Teyvat
+[![Card do Discord](https://cardzera.audibert.dev/api/748720691645251716?t={timestamp})](https://discord.gg/gibrasil)
 
-[![Discord Server Card](https://cardzera.audibert.dev/api/1112920281367973900?t={timestamp})](https://discord.gg/servidordosprogramadores)
+### Opera Epiclese
+[![Card do Discord](https://cardzera.audibert.dev/api/996403908530405406?t={timestamp})](https://discord.gg/operaepiclese)
 
-> [!IMPORTANT]
-> Adding `?t={timestamp}` to the URL is essential to force the card to update in real time.
+### Servidor dos Programadores
+[![Card do Discord](https://cardzera.audibert.dev/api/1112920281367973900?t={timestamp})](https://discord.gg/servidordosprogramadores)
 
-## Parameters
+### Exemplo genérico
+[![Card do Discord](https://cardzera.audibert.dev/api/1383718526694461532?t={timestamp})](https://discord.gg/XuhsaMEqzf)
 
-You can customize your card by adding the following query parameters:
+> **IMPORTANTE:**  
+> Adicionar `?t={timestamp}` na URL é essencial para forçar a atualização do card em tempo real.
 
-| Parameter            | Default  | Description                                      |
-| -------------------- | -------- | ------------------------------------------------ |
-| `backgroundColor`    | `1a1c1f` | Card background color                            |
-| `buttonColor`        | `00863A` | Join button color                                |
-| `buttonText`         | `Join`   | Button text (max 28 characters)                  |
-| `buttonTextColor`    | `ffffff` | Join button color                                | 
-| `buttonBorderRadius` | `10`     | Button Border radius in pixels (min: 0, max: 30) |
-| `infoColor`          | `b5bac1` | Information color (members/online counter)       |
-| `nameColor`          | `ffffff` | Server name color                                |
-| `borderRadius`       | `10`     | Border radius in pixels (min: 0, max: 30)        |
+## Parâmetros
 
+Você pode customizar seu card adicionando os seguintes parâmetros na URL:
 
-### Example with all parameters:
+| Parâmetro             | Padrão   | Descrição                                         |
+| --------------------- | -------- | ------------------------------------------------- |
+| `backgroundColor`     | `1a1c1f` | Cor de fundo do card                              |
+| `buttonColor`         | `00863A` | Cor do botão de entrar                            |
+| `buttonText`          | `Join`   | Texto do botão (máx. 28 caracteres)               |
+| `buttonTextColor`     | `ffffff` | Cor do texto do botão                             | 
+| `buttonBorderRadius`  | `10`     | Raio da borda do botão em pixels (mín: 0, máx: 30)|
+| `infoColor`           | `b5bac1` | Cor das informações (membros/online)              |
+| `nameColor`           | `ffffff` | Cor do nome do servidor                           |
+| `borderRadius`        | `10`     | Raio da borda do card em pixels (mín: 0, máx: 30) |
+
+#### Exemplo com todos os parâmetros:
 
 ```markdown
-[![Discord Server Card](https://cardzera.audibert.dev/api/:serverId?backgroundColor=ffffff&buttonColor=000000&buttonBorderRadius=0&buttonText=Star%20the%20repository&buttonTextColor=ffffff&infoColor=353535&nameColor=000000&borderRadius=0?t={timestamp})](https://discord.gg/serverInviteCode)
+[![Card do Discord](https://cardzera.audibert.dev/api/:serverId?backgroundColor=ffffff&buttonColor=000000&buttonBorderRadius=0&buttonText=Star%20the%20repository&buttonTextColor=ffffff&infoColor=353535&nameColor=000000&borderRadius=0&t={timestamp})](https://discord.gg/serverInviteCode)
 ```
 
-### Output:
+#### Saída:
 
-[![Discord Server Card](https://cardzera.audibert.dev/api/1383718526694461532?backgroundColor=ffffff&buttonBorderRadius=10&buttonColor=000000&buttonText=Star%20the%20repository&buttonTextColor=ffffff&infoColor=353535&nameColor=000000&borderRadius=0?t={timestamp})](https://discord.gg/XuhsaMEqzf)
+[![Card do Discord](https://cardzera.audibert.dev/api/1383718526694461532?backgroundColor=ffffff&buttonBorderRadius=10&buttonColor=000000&buttonText=Star%20the%20repository&buttonTextColor=ffffff&infoColor=353535&nameColor=000000&borderRadius=0&t={timestamp})](https://discord.gg/XuhsaMEqzf)
 
-> [!NOTE]
-> If the server has no photo, a default photo will be used.
+> **Nota:**  
+> Se o servidor não tiver foto, uma imagem padrão será usada.
 
-## Contribuition
+## Contribuição
 
-Contributions are welcome! Feel free to open an issue or submit a pull request if you have a way to improve this project.
+Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request se tiver sugestões de melhorias.
 
-Make sure your request is meaningful and you have tested the app locally before submitting a pull request.
+Certifique-se de que sua sugestão é relevante e que você testou o app localmente antes de enviar um pull request.
 
-## Support
+## Suporte
 
-_If you're using this repo, feel free to show support and give this repo a ⭐ star! It means a lot, thank you :)_
+_Se você está usando este repositório, considere deixar uma ⭐! Isso ajuda muito, obrigado :)_
+
+---
+
+### Servidores de exemplo
+
+- teyvat: `748720691645251716` — [discord.gg/gibrasil](https://discord.gg/gibrasil)
+- opera: `996403908530405406` — [discord.gg/operaepiclese](https://discord.gg/operaepiclese)
