@@ -15,9 +15,6 @@ Exemplo de uso no README:
 ### Teyvat
 [![Card do Discord](https://cardzera.audibert.dev/api/748720691645251716?t={timestamp})](https://discord.gg/gibrasil)
 
-### Opera Epiclese
-[![Card do Discord](https://cardzera.audibert.dev/api/996403908530405406?t={timestamp})](https://discord.gg/operaepiclese)
-
 
 > **IMPORTANTE:**  
 > Adicionar `?t={timestamp}` na URL é essencial para forçar a atualização do card em tempo real.
