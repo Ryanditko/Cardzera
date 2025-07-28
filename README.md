@@ -42,7 +42,7 @@ Você pode customizar seu card adicionando os seguintes parâmetros na URL:
 
 #### Saída:
 
-[![Card do Discord](https://cardzera.audibert.dev/api/1383718526694461532?backgroundColor=ffffff&buttonBorderRadius=10&buttonColor=000000&buttonText=Star%20the%20repository&buttonTextColor=ffffff&infoColor=353535&nameColor=000000&borderRadius=0&t={timestamp})](https://discord.gg/gibrasil)
+[![Card do Discord](https://cardzera.audibert.dev/api/748720691645251716?backgroundColor=ffffff&buttonBorderRadius=10&buttonColor=000000&buttonText=Star%20the%20repository&buttonTextColor=ffffff&infoColor=353535&nameColor=000000&borderRadius=0&t={timestamp})](https://discord.gg/gibrasil)
 
 > **Nota:**  
 > Se o servidor não tiver foto, uma imagem padrão será usada.
